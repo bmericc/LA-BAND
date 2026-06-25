@@ -37,7 +37,7 @@ Sadece >=1025px; mobil (<=1024) media query'leri etkilenmez.
         min-width: 0;
     }
     #white-background {
-        margin: 25px 25px 80px 25px;
+        margin: 25px 0 80px 0;
         width: auto;
         max-width: none;
     }
