@@ -10,7 +10,9 @@
             </div>
 
             <div class="blog-post-title">
+                <?php if ( ! is_singular() ) : ?>
                 <h2 class="permalink"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'site5framework' ); ?> <?php the_title(); ?>"><?php the_title(); ?></a></h2>
+                <?php endif; ?>
             </div>
 
             <header>

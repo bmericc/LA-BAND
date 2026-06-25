@@ -43,6 +43,3 @@ Sadece >=1025px; mobil (<=1024) media query'leri etkilenmez.
     }
 }
 
-/* Single yazı: başlık üstteki page-title-heading'de gösteriliyor;
-   makale içindeki tekrar eden başlığı (.permalink) gizle (liste sayfası etkilenmez) */
-.single h2.permalink { display: none; }

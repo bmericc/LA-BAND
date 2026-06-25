@@ -39,7 +39,9 @@ $embed = get_post_meta($post->ID, 'sn_video_post_embed', $single = true);
                     }?>
             <?php }?>
 
+            <?php if ( ! is_singular() ) : ?>
             <h2 class="permalink"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'site5framework' ); ?> <?php the_title(); ?>"><?php the_title(); ?></a></h2>
+            <?php endif; ?>
             <?php if (is_singular()): the_content();
                 else : ?>
             <?php the_excerpt(); ?>

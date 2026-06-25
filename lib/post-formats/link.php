@@ -18,7 +18,9 @@
 
         <!-- link custom post-->
         <div class="entry-content">
+            <?php if ( ! is_singular() ) : ?>
             <h2><a href="<?php echo get_post_meta($post->ID, 'sn_link_post_url', true); ?>"><?php the_title(); ?></a></h2>
+            <?php endif; ?>
             <span><?php echo get_post_meta($post->ID, 'sn_link_post_description', true); ?></span>
         </div>
         <!-- link custom post-->
