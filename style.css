@@ -115,5 +115,11 @@ Sayfa içeriği grid sütunları full width (iletişim vb.) — masaüstü
 }
 
 /* Öne çıkan görsel (WP featured image) */
-.cm-featured-image { margin: 0 0 1.2em; }
 .cm-featured-image img { max-width: 100%; height: auto; display: block; border-radius: 4px; }
+/* single: üstte tam */
+.cm-fi-single { margin: 0 0 1.2em; }
+/* liste: sola küçük, metin sağında */
+.cm-fi-list { float: left; width: 200px; margin: 4px 18px 8px 0; }
+.cm-fi-list img { width: 100%; }
+/* floated görseli post kartında tut */
+#content .three-fourth-block { overflow: hidden; }

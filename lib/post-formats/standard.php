@@ -1,11 +1,13 @@
             <?php if ( has_post_thumbnail() ) : ?>
-            <div class="cm-featured-image">
                 <?php if ( ! is_singular() ) : ?>
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('cm-featured'); ?></a>
+                    <div class="cm-featured-image cm-fi-list">
+                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
+                    </div>
                 <?php else : ?>
-                    <?php the_post_thumbnail('cm-featured'); ?>
+                    <div class="cm-featured-image cm-fi-single">
+                        <?php the_post_thumbnail('cm-featured'); ?>
+                    </div>
                 <?php endif; ?>
-            </div>
             <?php endif; ?>
 
             <?php if ( ! is_singular() ) : ?>
