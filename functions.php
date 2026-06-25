@@ -66,6 +66,17 @@ function excerpt_content($limit) {
 }
 
 function laband_load_javascript_functions() {
+    // jQuery.browser shim — jQuery 1.9+ bu özelliği kaldırdı; eski tema scriptleri
+    // ($.browser.msie) kullandığından TypeError veriyordu. jQuery'den hemen sonra ekle.
+    wp_enqueue_script('jquery');
+    wp_add_inline_script('jquery-core',
+        'if(window.jQuery&&!jQuery.browser){var _ua=navigator.userAgent.toLowerCase();'
+        . 'jQuery.browser={msie:/msie|trident/.test(_ua),webkit:/webkit/.test(_ua),'
+        . 'mozilla:/mozilla/.test(_ua)&&!/(compatible|webkit)/.test(_ua),'
+        . 'version:(/(?:msie |rv:)(\\d+(\\.\\d+)?)/.exec(_ua)||[0,"0"])[1]};}',
+        'after'
+    );
+
     wp_enqueue_script('mixitup', get_template_directory_uri() . '/library/js/jquery.mixitup.js', array('jquery'), false, true);
     wp_enqueue_script( 'behaviours-js', get_template_directory_uri() .'/library/js/behaviours.js', array( 'jquery' ), false, true );
     wp_enqueue_script('scripts', get_template_directory_uri() . '/library/js/scripts.js', array(), null, true);
