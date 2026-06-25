@@ -98,3 +98,17 @@ Sidebar layout (single + blog list + arşiv): içerik full width + Etiketler en 
         float: none !important;
     }
 }
+
+/******************************************************************
+Sayfa içeriği grid sütunları full width (iletişim vb.) — masaüstü
+******************************************************************/
+@media (min-width: 1025px) {
+    #white-background #content .one-half  { width: calc(50% - 10px) !important; }
+    #white-background #content .two-third { width: calc(66.6% - 7px) !important; }
+    #white-background #content .one-third { width: calc(33.3% - 14px) !important; }
+    #white-background #content .one-half.last,
+    #white-background #content .two-third.last,
+    #white-background #content .one-third.last { margin-right: 0 !important; }
+    /* iç container'lar tam genişlik */
+    #white-background #content .container { width: auto !important; max-width: none !important; }
+}
