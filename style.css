@@ -76,13 +76,15 @@ Sidebar layout (single + blog list + arşiv): içerik full width + Etiketler en 
 @media (min-width: 1025px) {
     #white-background #content .three-fourth {
         float: left !important;
-        width: calc(100% - 260px) !important;
+        width: calc(100% - 280px) !important;
         margin-right: 0 !important;
+        box-sizing: border-box !important;
     }
     #white-background #content .one-fourth-block.last {
         float: right !important;
-        width: 220px !important;
+        width: 250px !important;
         margin-left: 20px !important;
+        box-sizing: border-box !important;
     }
     /* içerik kutularını akışkan yap */
     #white-background #content .three-fourth-block,
