@@ -5,17 +5,7 @@
             <div id="content" class="container clearfix" style="padding-bottom: 0;">
 
                 <div class="page-title-heading">
-                    <h2><?php _e("OUR BLOG", "site5framework"); ?>
-                        <?php
-                        $singledescpage = of_get_option('sc_singledesc');
-                        $singledesc = get_post_meta($singledescpage, 'snbpd_pagedesc');
-                        ?>
-
-                        <?php if (!empty($singledesc)) {
-                            echo ' / <span>';
-                            echo $singledesc[0].'</span>';
-                        }?>
-                    </h2>
+                    <h2><?php echo get_the_title(); ?></h2>
                 </div>
                 <div class="title-border"></div>
 
