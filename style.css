@@ -75,10 +75,9 @@ Sidebar layout (single + blog list + arşiv): içerik full width + Etiketler en 
 ******************************************************************/
 @media (min-width: 1025px) {
     #white-background #content .three-fourth {
-        width: auto !important;
-        float: none !important;
-        overflow: hidden;            /* BFC: sağdaki float sidebar'ın yanını doldur */
-        margin-right: 260px;
+        float: left !important;
+        width: calc(100% - 260px) !important;
+        margin-right: 0 !important;
     }
     #white-background #content .one-fourth-block.last {
         float: right !important;
