@@ -36,7 +36,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* 02- 	TYPOGRAPHY 
 /* ---------------------------------------------------------------------- */
 body {
-	background:#FFF;
+	background: url(../images/bg-pattern.png) repeat;
 	color: #959595 !important;
 	font-size: 13px !important;
     font-weight: normal;
@@ -272,7 +272,7 @@ ul#social-links > li a.itunes:hover { float: left; font-size: 12px; background-p
 /* -------------------------------------------------- */
 #page {
 	height: 100%;
-	background:#FFF;
+	background: url(../images/bg-pattern.png) repeat;
 	/*padding: 180px 0 0 100px;*/
     position: relative;
     padding: 1px 0 0 0;
