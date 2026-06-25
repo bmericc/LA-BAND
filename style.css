@@ -43,3 +43,21 @@ Sadece >=1025px; mobil (<=1024) media query'leri etkilenmez.
     }
 }
 
+
+/******************************************************************
+Fanciest Author Box (ts-fab) — koyu temaya uydur (beyaz kutu kaldırıldı)
+******************************************************************/
+.ts-fab-tab,
+#ts-fab-below .ts-fab-tab {
+    background: #1c1c1c !important;
+    border: 1px solid #333 !important;
+    color: #b5b5b5 !important;
+    box-shadow: none !important;
+}
+.ts-fab-tab .ts-fab-text,
+.ts-fab-tab .ts-fab-description,
+.ts-fab-tab .ts-fab-content,
+.ts-fab-tab p,
+.ts-fab-tab span { color: #b5b5b5 !important; }
+.ts-fab-tabs .ts-fab-tablink,
+.ts-fab-tabs a { color: #ddd !important; }
