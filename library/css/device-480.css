@@ -1,0 +1,22 @@
+/*-------------------------------------------*/
+/* #device (Portrait)*/
+/*-------------------------------------------*/
+@media only screen and (max-device-width: 479px) {
+
+    #fap-wrapper {
+        border-top: none !important;
+        border-bottom: 1px dotted #6A6A6A !important;
+    }
+
+    #fap-wrapper-switcher {
+        border-bottom: 1px dotted #6a6a6a !important;
+        border-left: 1px dotted #6a6a6a !important;
+        border-right: 1px dotted #6a6a6a !important;
+        border-top: 1px dotted #000 !important;
+    }
+
+    #full-width-slider #slides {
+        height: 350px;
+    }
+
+}
