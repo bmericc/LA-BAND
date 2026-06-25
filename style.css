@@ -14,3 +14,31 @@ Version: 1.1.4
 @import url("library/css/480.css");
 @import url("library/css/320.css");
 @import url("library/css/device-480.css");
+
+/******************************************************************
+Masaüstü layout: sidebar + content yan yana (flex)
+Sadece >=1025px; mobil (<=1024) media query'leri etkilenmez.
+******************************************************************/
+@media (min-width: 1025px) {
+    #page {
+        display: flex;
+        align-items: stretch;
+    }
+    #section-top {
+        position: static;
+        float: none;
+        width: 270px;
+        flex: 0 0 270px;
+        height: auto;
+        min-height: 100vh;
+    }
+    #main-column {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+    #white-background {
+        margin: 25px 25px 80px 25px;
+        width: auto;
+        max-width: none;
+    }
+}

@@ -1,3 +1,4 @@
+        </div><!-- end #main-column -->
         </div>
         <!-- end #page here -->
 

@@ -298,6 +298,8 @@
                     </div>
                 </div>
 
+                <div id="main-column">
+
 	            <div id="search-bar">
                     <div id="search-wrapper-left">
                         <div id="search-bar-icon"></div>
