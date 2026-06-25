@@ -68,3 +68,33 @@ Fanciest Author Box (ts-fab) — koyu temaya uydur (beyaz kutu kaldırıldı)
 .ts-fab-tab span { color: #b5b5b5 !important; }
 .ts-fab-tabs .ts-fab-tablink,
 .ts-fab-tabs a { color: #ddd !important; }
+
+/******************************************************************
+Sidebar layout (single + blog list + arşiv): içerik full width + Etiketler en sağda
+(masaüstü; .three-fourth kullanmayan sayfalar etkilenmez)
+******************************************************************/
+@media (min-width: 1025px) {
+    #white-background #content .three-fourth {
+        width: auto !important;
+        float: none !important;
+        overflow: hidden;            /* BFC: sağdaki float sidebar'ın yanını doldur */
+        margin-right: 260px;
+    }
+    #white-background #content .one-fourth-block.last {
+        float: right !important;
+        width: 220px !important;
+        margin-left: 20px !important;
+    }
+    /* içerik kutularını akışkan yap */
+    #white-background #content .three-fourth-block,
+    #white-background #content #main,
+    #white-background #content article,
+    #white-background #content .entry-body,
+    #white-background #content .entry-content,
+    #white-background #content .post-meta,
+    #white-background #content .post-author,
+    #white-background #content .excerpt {
+        width: auto !important;
+        float: none !important;
+    }
+}
