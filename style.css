@@ -37,7 +37,14 @@ Sadece >=1025px; mobil (<=1024) media query'leri etkilenmez.
         min-width: 0;
     }
     #white-background {
-        margin: 25px 0 80px 0;
+        margin: 40px 0 80px 0;
+        padding: 20px 30px 30px 30px;
+        width: auto;
+        max-width: none;
+    }
+    /* içerik sarmalayıcıları full width */
+    #white-background .container,
+    #white-background #content {
         width: auto;
         max-width: none;
     }
