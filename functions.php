@@ -5,6 +5,12 @@ require_once('library/siteframework.php');		// core functions
 require('theme-options.php');          			// theme options
 //require_once('custom_slider.php');
 
+// Öne çıkan görsel (WP featured image) desteği — tema kendi meta'sını kullanıyordu, eklendi
+add_action('after_setup_theme', function () {
+    add_theme_support('post-thumbnails');
+    add_image_size('cm-featured', 1200, 0, false); // genişlik 1200, oran korunur
+});
+
 add_action( 'add_meta_boxes', 'laband_action_add_meta_boxes', 10, 2 );
 
 function laband_action_add_meta_boxes() {

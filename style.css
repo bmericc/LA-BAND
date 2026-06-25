@@ -113,3 +113,7 @@ Sayfa içeriği grid sütunları full width (iletişim vb.) — masaüstü
     /* iç container'lar tam genişlik */
     #white-background #content .container { width: auto !important; max-width: none !important; }
 }
+
+/* Öne çıkan görsel (WP featured image) */
+.cm-featured-image { margin: 0 0 1.2em; }
+.cm-featured-image img { max-width: 100%; height: auto; display: block; border-radius: 4px; }

@@ -1,3 +1,13 @@
+            <?php if ( has_post_thumbnail() ) : ?>
+            <div class="cm-featured-image">
+                <?php if ( ! is_singular() ) : ?>
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('cm-featured'); ?></a>
+                <?php else : ?>
+                    <?php the_post_thumbnail('cm-featured'); ?>
+                <?php endif; ?>
+            </div>
+            <?php endif; ?>
+
             <?php if ( ! is_singular() ) : ?>
             <h2 class="permalink"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php _e( 'Permanent Link to', 'site5framework' ); ?> <?php the_title(); ?>"><?php the_title(); ?></a></h2>
             <?php endif; ?>
