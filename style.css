@@ -118,8 +118,8 @@ Sayfa içeriği grid sütunları full width (iletişim vb.) — masaüstü
 .cm-featured-image img { max-width: 100%; height: auto; display: block; border-radius: 4px; }
 /* single: üstte tam */
 .cm-fi-single { margin: 0 0 1.2em; }
-/* liste: sola küçük, metin sağında */
-.cm-fi-list { float: left; width: 200px; margin: 4px 18px 8px 0; }
-.cm-fi-list img { width: 100%; }
+/* liste: sola küçük KARE (kırpılmış), metin sağında */
+.cm-fi-list { float: left; width: 200px; height: 200px; margin: 4px 18px 8px 0; }
+.cm-fi-list img { width: 200px; height: 200px; object-fit: cover; display: block; }
 /* floated görseli post kartında tut */
 #content .three-fourth-block { overflow: hidden; }
